@@ -35,6 +35,11 @@ export function BudgetProgress({ initialBudget, currentExpenses }) {
     ? (currentExpenses / initialBudget.amount) * 100
     : 0;
 
+  if (percentUsed > 90) {
+    toast.error("You have exceeded your budget!");
+    
+  }
+
 
   const handleUpdateBudget = async () => {
     const amount = parseFloat(newBudget);

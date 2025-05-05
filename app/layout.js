@@ -6,7 +6,7 @@ import { Toaster } from 'sonner';
 
 const inter = Inter({subsets : ["latin"]});
 export const metadata = {
-  title: "Fintrack",
+  title: "Fintrack - A Financial Management Platform",
   description: "Finance Tracker",
 };
 
